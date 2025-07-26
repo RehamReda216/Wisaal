@@ -10,7 +10,7 @@
   padding-inline: 40px;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
 }
 .donate-text h3{
   font-size: 40px;
@@ -23,6 +23,11 @@
   font-size: 18px;
   font-weight: 600;
 }
+.donate-text p{
+    color:#666666;
+    line-height: 30px;
+    font-size: 20px;
+}
 .donatebtn{
     background: linear-gradient(to right, #00ded8, #00a7d5);  
     color: white;
@@ -34,5 +39,69 @@
 
 .donate-counter{
   display: flex;
-  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  gap: 70px;
+}
+.counter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.count-wrapper{
+  padding: 10px; /* سمك التدرج */
+  border-radius: 50%; /* عشان تفضل مدورة */
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 26px;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+
+}
+.count{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+.count span{
+  color: #242f6c;
+}
+.counter > span{
+    color: #242f6c;
+    font-size: 20px;
+}
+.counter-1{
+    background: linear-gradient(to right, #00a7d5, #00ded8); /* التدرج */
+}
+.counter-2{
+  background: linear-gradient(173deg, rgb(255, 173, 111) 0%, rgb(255, 125, 144) 100%)
+}
+.counter-3{
+  background: linear-gradient(179deg, rgb(216, 205, 255) 0%, rgb(109, 100, 255) 100%)
+}
+
+@media (max-width:1024px) {
+
+  .donate-container{
+      flex-direction: column;
+      gap: 30px;
+      margin-inline: 115px;
+  }
+  .donate-text, .donate-counter{
+    width: 90%;
+  }
+  
+  .donate-counter{
+    justify-content: center;
+    margin-left: 40px;
+  }
 }
