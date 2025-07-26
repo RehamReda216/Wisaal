@@ -1,10 +1,33 @@
+.container{
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+/* small */
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* medium */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
 #donate{
-  min-height: 50vh;
-  padding: 100px 0;
+  min-height: 40vh;
+  padding: 120px 0;
   background: #f5fbfd;
 }
 .donate-container{
-    display: flex;
+  margin: 0;
+  display: flex;
 }
 .donate-text{
   padding-inline: 40px;
@@ -37,11 +60,13 @@
     border: none;
 }
 
-.donate-counter{
+.donate-counters {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 60%;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 50%;
   gap: 70px;
 }
 .counter{
@@ -71,6 +96,7 @@
   border-radius: 50%;
   width: 90px;
   height: 90px;
+  font-weight: 800;
 }
 .count span{
   color: #242f6c;
@@ -90,18 +116,50 @@
 }
 
 @media (max-width:1024px) {
-
+  .donate-text{
+    padding-inline: 0;
+  }
   .donate-container{
       flex-direction: column;
       gap: 30px;
-      margin-inline: 115px;
   }
   .donate-text, .donate-counter{
-    width: 90%;
+    width: 100%;
   }
-  
-  .donate-counter{
-    justify-content: center;
-    margin-left: 40px;
+  .donate-text, .donate-counter{
+    width: 100%;
   }
 }
+@media (min-width:427px) and (max-width:1024px) {
+  .donate-counters{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .donate-container{
+      margin-inline: auto;
+  }
+}
+
+@media (max-width:768px){
+  .donate-container{
+      margin-inline: 14px;
+  }
+}
+@media (min-width:768px) and (max-width:992px){
+    .donate-container{
+        width: 750px;
+    }
+}
+
+@media (max-width:426px) {
+  .donate-counters{
+    gap:20px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .counter{
+    width: 100%;
+  }
+}
+
