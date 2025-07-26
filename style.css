@@ -1,6 +1,7 @@
 #donate{
-  min-height: 120vh;
+  min-height: 50vh;
   padding: 100px 0;
+  background: #f5fbfd;
 }
 .donate-container{
     display: flex;
@@ -9,13 +10,13 @@
   padding-inline: 40px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
 }
 .donate-text h3{
   font-size: 40px;
   color:#242f6c;
   font-weight: 900;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 .donate-text span{
   color: #00c6d1;
