@@ -1,0 +1,19 @@
+.contact-wrapper h5{
+  font-size: 30px;
+  color:#242f6c;
+  font-weight: 900;
+  margin: 10px 0;
+}
+.contact-wrapper p{
+    color:#666666;
+    line-height: 30px;
+    font-size: 20px;
+}
+.donatebtn{
+    background: linear-gradient(to right, #00ded8, #00a7d5);  
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;    
+    border: none;
+}
