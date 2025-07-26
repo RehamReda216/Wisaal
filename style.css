@@ -21,7 +21,7 @@
     }
 }
 #blogs{
-  background-color: #f5fbfd;
+  background-color: white;
   min-height: 50vh;
   padding: 70px 0;
 }
@@ -46,8 +46,9 @@
 
 .blog-cards{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap:30px;
+  margin: 0;
 }
 .blog-card{
   background-color: white;
@@ -56,7 +57,6 @@
   width: 40%;
   max-width: 355px;
   height: auto;
-  box-shadow: 0px 5px 9.8px 0.2px rgba(85, 85, 85, 0.07);
 }
 .blog-card .blog-img{
   position: relative;
@@ -69,8 +69,8 @@
   height: 100%;
   z-index: 1;
 }
-.thumb-nail {
-  
+.thumb-nail img {
+  border-radius: 50%;
 }
 
 /* .event-card .event-img span{
@@ -87,7 +87,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5px;
+  padding: 20px;
 }
 .blog-card .blog-info a{
   font-size: 24px;
@@ -98,43 +98,58 @@
 }
 .blog-card .blog-info .card-info{
   display: flex;
+  align-items: center;
   gap:20px;
+  color:#666666;
 }
 .blog-card .blog-info span{
   font-size: 16px;
-  color:#666666;
   font-weight: 600;
 }
 
-@media (min-width:767px) and (max-width:992px) {
-    .event-card{
+@media (min-width:992px) and (max-width:1200px) {
+  .blog-cards{
+    margin: auto;
+  }
+  .blog-card{
       width: 100%;
-    }
-   
-    .event-card .event-img{
-      width: 50%;
-    }
+      max-width: 455px;
+  }
 }
-@media (max-width:629px) and (max-width:766px) {
-  .events-heading{
+@media (min-width:630px) and (max-width:992px) {
+  .blog-cards{
+    margin: auto;
+  }
+  .blog-card{
+      width: 100%;
+      max-width: 345px;
+  }
+}
+@media (min-width:319px) and (max-width:629px) {
+  .blogs-heading{
     padding-bottom: 40px;
   }
-  .event-cards{
-    margin-inline: 5px;
-  }
-  .event-card{
-    flex-direction: column;
-    width: 395px;
-    height: 600px;
-  }
-
-  .event-card .event-info{
-    padding: 20px 10px;
-    width: 80%;
-  }
-
-  .events-heading h3{
+  .blogs-heading h3{
     font-size: 22px;
   }
-  
-}
+  .blog-cards{
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .blog-card{
+      width: 100%;
+      max-width: 600px;
+  }
+  .blog-card .blog-info{
+    padding: 20px 10px;
+    width: 95%;
+  }
+  .blog-card .blog-info a{
+    font-size: 20px;
+  }
+  .blog-card .blog-info .card-info{
+    gap: 5px;
+  } 
+} 
