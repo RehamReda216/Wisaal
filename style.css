@@ -1,0 +1,37 @@
+#donate{
+  min-height: 120vh;
+  padding: 100px 0;
+}
+.donate-container{
+    display: flex;
+}
+.donate-text{
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.donate-text h3{
+  font-size: 40px;
+  color:#242f6c;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.donate-text span{
+  color: #00c6d1;
+  font-size: 18px;
+  font-weight: 600;
+}
+.donatebtn{
+    background: linear-gradient(to right, #00ded8, #00a7d5);  
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;    
+    border: none;
+}
+
+.donate-counter{
+  display: flex;
+  width: 50%;
+}
