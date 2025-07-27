@@ -72,6 +72,18 @@ ul{
     width: 1170px;
   }
 }
+.custombtn{
+  background: linear-gradient(to right, #00ded8, #00a7d5);  
+  box-shadow:0 0 0 5px #c8eaf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 40px;    
+  border: none;
+}
 /* -- Start Navbar --*/
 nav{
   background-color: white;
