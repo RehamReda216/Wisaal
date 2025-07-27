@@ -250,6 +250,137 @@ nav{
     }
 }
 /* -- END HERO --*/
+/* -- START ABOUT --*/
+
+h2{
+    font-size: 40px;
+    color:#242f6c;
+    font-weight: 900;
+    margin-top: 10px;
+}
+p{
+    color:#666666;
+    line-height: 30px;
+    font-size: 18px;
+}
+span{
+    color: #00c6d1;
+    font-size: 16px;
+    font-weight: 600;
+}
+.discoverbtn{
+    background: linear-gradient(to right, #00ded8, #00a7d5);  
+    box-shadow: 0 0 0 5px #c8eaf5;  
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;    
+    border: none;
+}
+
+.container{
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+.about{
+  display: flex;
+  background-color: white;
+  gap: 20px;
+  padding:40px 0;
+}
+.about-text{
+  padding-top: 50px;
+  width: 50%;
+}
+.about-image{
+  width: 50%;
+}
+.about-buttons{
+  display: flex;
+  gap: 20px;
+}
+.playbtn{
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  color: #00a7d5 ;
+  box-shadow: 0px 2px 12.75px 2.25px rgba(51, 100, 219, 0.15);
+}
+.watchbtn{
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size:20px;
+  color: #08b3c0;
+}
+
+@media (max-width:768px) {
+  .about{
+    flex-direction: column;
+    padding: 0;
+  }
+  .about-text{
+    padding:40px;
+  }
+  .about-image{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+  }
+  .about-image img{
+    width: 200px;
+    overflow: hidden;
+  }
+  .watchbtn{
+    display:none;
+  }
+  p{
+    font-size: 24px;
+  }
+}
+
+@media (max-width:425px) {
+   .about{
+    padding: 0;
+    width: 100%;
+  }
+  .about-image{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    padding-inline: 10px;
+    height: auto;
+  }
+  .about-image img{
+    width: 455px;
+    height:400px;
+    overflow: hidden;
+  }
+}
+.container{
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+/* small */
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* medium */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* -- END ABOUT --*/
 /* footer start */
 
 footer{
