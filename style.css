@@ -158,11 +158,103 @@ nav{
   }
 }
 /* -- End Navbar --*/
+/* -- Start HERO --*/
+#hero{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url("./assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.hero-text{
+    padding: 300px 20px 40px 100px;
+    width: 45%;
+}
+.hero-text h2{
+    font-size: 40px;
+    color:#242f6c;
+}
+.hero-text p{
+    color:#666666;
+}
+.hero-text .span-wrapper{
+    background-color: white;
+    width: 140px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.hero-text span{
+    color: #088998;
+    font-size: 16px;
+    font-weight: 600;
+}
+.discoverbtn{
+    background: linear-gradient(to right, #00ded8, #00a7d5);  
+    box-shadow: 0 0 0 5px #c8eaf5;  
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;    
+    border: none;
+}
+.hero-image-wrapper{
+    position: relative;
+    width: 55%;
+    padding-top: 200px;
+}
+.circle-rounded,.hero-image-wrapper img{
+    position: absolute;
+}
+.circle-rounded{
+    top: 80;
+    right: 80px;
+    bottom: 20px;
+    width: 415px;
+    height: 415px;
+    z-index: 10;
+    border: dashed 1px #088998;
+    border-radius: 50%;
+}
+.hero-image-wrapper img{
+    right:190px;
+    top:280px;
+    z-index: 1000;
+    width: 250px;
+    height: 450px;
+    transform: scale(1.2);
+}
+@media (max-width:992px) {
+    .hero-image-wrapper{
+        display: none;
+    }
+    .hero-text{
+        padding: 150px 20px 40px 50px;
+        width: 70%;
+    }
+}
+@media (max-width:450px) {
+    .hero-text{
+        padding: 50px 20px 40px 30px;
+        width: 80%;
+    }
+    .hero-text h2{
+        font-size: 19px;
+    }
+    .hero-text h2, p{
+        line-height: 30px;
+    }
+}
+/* -- END HERO --*/
 /* footer start */
 
 footer{
     width: 100%;
-    background-color: #f5fbfd;
+    background-color: #f5fbfd!important;
 }
 
 .footer-content{
@@ -174,6 +266,9 @@ footer{
 }
 .footer-content a{
     color: #525252;
+}
+.footer-content h2{
+    font-size: 23px;;
 }
 .footer-content ul {
     padding: 0;
@@ -226,3 +321,4 @@ footer{
     }
 }
 /* footer end */
+
