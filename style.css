@@ -1,3 +1,4 @@
+/*--- global styles ---*/
 @font-face {
   font-family: 'Now';
   src: url('./fonts/now-thin.woff2') format('woff2');
@@ -56,15 +57,14 @@ ul{
     padding-inline: 15px;
     margin-inline: auto;
 }
-/* small */
 
-/* medium */
+/* medium container */
 @media (min-width:992px) {
     .container{
         width: 970px;
     }
 }
-/* medium */
+/* large container */
 @media (min-width:1200px) {
     .container{
         width: 1170px;
@@ -157,14 +157,9 @@ nav{
     display: none;
   }
 }
-/* -- End Navbar --*//* footer start */
-ul{
-  list-style: none;
-  padding: 0;
-}
-a{
-    text-decoration: none;
-}
+/* -- End Navbar --*/
+/* footer start */
+
 #footer{
     width: 100%;
 }
@@ -179,7 +174,9 @@ a{
 .footer-content a{
     color: #525252;
 }
-
+.footer-content ul {
+    padding: 0;
+}
 .footer-services ul li,.footer-useful-links ul li{
     padding: 0.5rem 0;
 }
