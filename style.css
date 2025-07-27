@@ -730,7 +730,133 @@ span{
 }
 
 /* DONATE END */
+/* BlOGS START */
+#blogs{
+  background-color: white;
+  min-height: 50vh;
+  padding: 70px 0;
+}
+.blogs-heading{
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blogs-heading h3{
+  font-size: 40px;
+  color:#242f6c;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.blogs-heading span{
+  color: #00c6d1;
+  font-size: 20px;
+  font-weight: 600;
+}
 
+.blog-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+  margin: 0;
+}
+.blog-card{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-width: 355px;
+  height: auto;
+}
+.blog-card .blog-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-card .blog-img img{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.thumb-nail img {
+  border-radius: 50%;
+}
+
+
+.blog-card .blog-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.blog-card .blog-info a{
+  font-size: 24px;
+  color:#242f6c;
+  font-weight:bold;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+.blog-card .blog-info .card-info{
+  display: flex;
+  align-items: center;
+  gap:20px;
+  color:#666666;
+}
+.blog-card .blog-info span{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+  .blog-cards{
+    margin: auto;
+  }
+  .blog-card{
+      width: 100%;
+      max-width: 455px;
+  }
+}
+@media (min-width:630px) and (max-width:992px) {
+  .blog-cards{
+    margin: auto;
+  }
+  .blog-card{
+      width: 100%;
+      max-width: 345px;
+  }
+}
+@media (min-width:319px) and (max-width:629px) {
+  .blogs-heading{
+    padding-bottom: 40px;
+  }
+  .blogs-heading h3{
+    font-size: 22px;
+  }
+  .blog-cards{
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .blog-card{
+      width: 100%;
+      max-width: 600px;
+  }
+  .blog-card .blog-info{
+    padding: 20px 10px;
+    width: 95%;
+  }
+  .blog-card .blog-info a{
+    font-size: 20px;
+  }
+  .blog-card .blog-info .card-info{
+    gap: 5px;
+  } 
+} 
+/* BlOGS END */
 /* footer start */
 
 footer{
@@ -749,7 +875,9 @@ footer{
     color: #525252;
 }
 .footer-content h2{
-    font-size: 23px;;
+    font-size: 20px;
+    color: #525252;
+    font-weight: 600;
 }
 .footer-content ul {
     padding: 0;
@@ -802,5 +930,3 @@ footer{
     }
 }
 /* footer end */
-
-
