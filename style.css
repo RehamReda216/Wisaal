@@ -251,37 +251,27 @@ nav{
 }
 /* -- END HERO --*/
 /* -- START ABOUT --*/
-
-h2{
+#about{
+    width: 100%;
+    min-height: 100vh;
+}
+#about h2{
     font-size: 40px;
     color:#242f6c;
     font-weight: 900;
     margin-top: 10px;
 }
-p{
+#about p{
     color:#666666;
     line-height: 30px;
     font-size: 18px;
 }
-span{
+#about span{
     color: #00c6d1;
     font-size: 16px;
     font-weight: 600;
 }
-.discoverbtn{
-    background: linear-gradient(to right, #00ded8, #00a7d5);  
-    box-shadow: 0 0 0 5px #c8eaf5;  
-    color: white;
-    width: 150px;
-    height: 50px;
-    border-radius: 40px;    
-    border: none;
-}
 
-.container{
-    padding-inline: 15px;
-    margin-inline: auto;
-}
 .about{
   display: flex;
   background-color: white;
