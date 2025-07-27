@@ -160,8 +160,9 @@ nav{
 /* -- End Navbar --*/
 /* footer start */
 
-#footer{
+footer{
     width: 100%;
+    background-color: #f5fbfd;
 }
 
 .footer-content{
