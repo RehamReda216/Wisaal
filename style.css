@@ -761,10 +761,9 @@ nav{
   height: 100%;
   z-index: 1;
 }
-.thumb-nail img {
+.thumb-photo img {
   border-radius: 50%;
 }
-
 
 .blog-card .blog-info{
   width: 100%;
