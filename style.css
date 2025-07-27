@@ -1,3 +1,4 @@
+/*--- global styles ---*/
 @font-face {
   font-family: 'Now';
   src: url('./fonts/now-thin.woff2') format('woff2');
@@ -46,6 +47,134 @@ body{
     padding: 0;
     background: linear-gradient(1deg, rgb(234, 248, 254) 0%, rgb(237, 254, 244) 100%);
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+/* medium container */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* large container */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+.custombtn{
+  background: linear-gradient(to right, #00ded8, #00a7d5);  
+  box-shadow:0 0 0 5px #c8eaf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 40px;    
+  border: none;
+}
+
+/* -- Start Navbar --*/
+nav{
+  background-color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+}
+.main-nav{
+  display: flex;
+}
+.logo{
+  height: 50px;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nav-links > li> a{
+  color: #666;
+}
+.nav-actions{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.bar{
+  min-width: 40px;
+  min-height: 40px;
+  background: linear-gradient(to right, #00ded8, #00a7d5);  
+  border-radius: 4px;
+  border: none;
+  display: none;
+  flex-shrink: 0;
+  margin-left: 40px;
+}
+.bar-icon{
+  color: white;
+  font-size: 20px;
+}
+@media (min-width:992px) {
+  .nav-actions .custombtn{
+    margin-left: 30px;
+  }
+}
+@media (max-width:992px) {
+  .nav-links{
+    display: none;
+  }
+  .bar{
+    display: block;
+  }
+  .main-nav{
+    justify-content: flex-end;
+  }
+  .nav-actions .bar{
+      margin-left: 20px;
+  }
+  .header{
+    padding-inline: 20px;
+}
+}
+@media (max-width:425px) {
+  .nav-actions .custombtn{
+    display: none;
+  }
+}
+/* -- End Navbar --*/
+/* -- Start HERO --*/
+#hero{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url("./assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.hero-text{
+    padding: 300px 20px 40px 100px;
+    width: 45%;
+}
+.hero-text h2{
 
 h2{
     font-size: 40px;
