@@ -194,23 +194,64 @@ nav{
     font-weight: 600;
 }
 .hero-image-wrapper{
-    position: relative;
+    position: absolute;
     width: 55%;
-    padding-top: 200px;
+    left: 70px;
+    right: 0;
+    top: 50px;
+    z-index: 1000;
 }
 .circle-rounded,.hero-image-wrapper img{
     position: absolute;
 }
-.circle-rounded{
-    top: 80;
-    right: 80px;
-    bottom: 20px;
-    width: 415px;
-    height: 415px;
-    z-index: 10;
-    border: dashed 1px #088998;
-    border-radius: 50%;
+
+.rotation-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 100px 0;
 }
+
+/* الدائرة الخلفية */
+.rotating-circle {
+  position: relative;
+  left: 30px;
+  right: 0;
+  top: -20px;
+  width: 500px;
+  height: 500px;
+  border: 1px dashed #088998;
+  border-radius: 50%;
+  animation: spin 60s linear infinite;
+  z-index: 0;
+}
+
+/* الأيقونات الثابتة */
+.icon {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  top: 29%;
+  left: 40%;
+  transform: rotate(calc(58deg * var(--i))) translate(250px) rotate(calc(-88deg * var(--i)));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .hero-image-wrapper img{
     right:190px;
     top:280px;
