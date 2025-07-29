@@ -1,3 +1,16 @@
+#contact{
+  max-height: 50vh;
+}
+.contact-wrapper{
+    max-width: 870px;
+    box-shadow: 0px 4px 9.5px 0.5px rgba(53, 53, 53, 0.1);
+    margin: 6rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9fdfe;
+}
 .contact-wrapper h5{
   font-size: 30px;
   color:#242f6c;
@@ -7,13 +20,61 @@
 .contact-wrapper p{
     color:#666666;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.email-container {
+  position: relative;
+  margin-top: 1rem;
+}
+.layer-top,.layer-bottom{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+}
+.layer-bottom{
+  color: #ccc;
+  border-radius: 40px;
+  border: none;
+  width: 320px;
+  padding: 1rem;
+  box-shadow: 0px 4px 9.5px 0.5px rgba(53, 53, 53, 0.1);
+  z-index: 1;
+}
+.layer-top{
+  z-index: 2;
+  transform: translate(21%,-50%);
 }
 .donatebtn{
     background: linear-gradient(to right, #00ded8, #00a7d5);  
     color: white;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;    
+    width: 142px;
+    height: 40px;
+    border-radius: 40px;    
     border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* @media (min-width:786px) and (max-width:992px) {
+    #contact{
+      margin-inline:1rem;
+    }  
+} */
+@media (min-width:786px) and (max-width:992px) {
+    .contact-wrapper{
+        max-width: 570px;
+    }
+    /* .donatebtn{
+      position:;
+      right: 250px;
+      top: -1px;
+  } */
 }
